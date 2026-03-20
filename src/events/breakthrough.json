@@ -1,0 +1,11 @@
+{
+  "id": "breakthrough",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["nation.resources.gold >= 100", "nation.resources.production >= 80"]
+  },
+  "effects": [
+    { "type": "dev_cost_modifier", "multiplier": 0.8, "durationTurns": 1 }
+  ],
+  "narrative": "A period of prosperity in {nation.name} sparks innovation. Development costs are reduced this turn."
+}

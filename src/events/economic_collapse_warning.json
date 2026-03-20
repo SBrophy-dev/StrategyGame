@@ -1,0 +1,11 @@
+{
+  "id": "economic_collapse_warning",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["nation.resources.gold < 0"]
+  },
+  "effects": [
+    { "type": "resource_delta", "resource": "influence", "amount": -5 }
+  ],
+  "narrative": "{nation.name}'s treasury is empty. Creditors grow restless and diplomatic standing suffers."
+}

@@ -1,0 +1,12 @@
+{
+  "id": "natural_disaster",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["nation.resources.food < 0", "nation.size >= 3"]
+  },
+  "effects": [
+    { "type": "unrest_delta", "targets": "all_owned", "amount": 15 },
+    { "type": "output_modifier", "multiplier": 0.7, "durationTurns": 1 }
+  ],
+  "narrative": "A natural disaster strikes {nation.name}'s lands. Crops are ruined and unrest surges."
+}

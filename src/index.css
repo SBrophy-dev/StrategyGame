@@ -1,0 +1,91 @@
+:root {
+  /* ── Base palette — deep dark moody grand-strategy theme ── */
+  --bg-primary: #06080e;
+  --bg-secondary: #0c1018;
+  --bg-tertiary: #121822;
+  --bg-panel: #0f1420;
+  --border: #1e2a3a;
+  --border-light: #2e3e55;
+  --text-primary: #d8dce6;
+  --text-secondary: #8a90a4;
+  --text-muted: #5a6078;
+  --text-heading: #f4f5f8;
+
+  /* ── Resource colors — vivid, saturated ── */
+  --gold: #ffc845;
+  --food: #3ec957;
+  --production: #d4874a;
+  --influence: #b44fd0;
+  --manpower: #f25564;
+
+  /* ── UI accents ── */
+  --accent: #3d7fd4;
+  --accent-hover: #5a9def;
+  --danger: #e84055;
+  --warning: #f0a830;
+  --success: #38b854;
+
+  /* ── Unrest overlay ── */
+  --unrest-low: rgba(242, 85, 100, 0.12);
+  --unrest-mid: rgba(242, 85, 100, 0.28);
+  --unrest-high: rgba(242, 85, 100, 0.50);
+
+  /* ── Terrain overlay tints ── */
+  --terrain-plains: rgba(190, 180, 130, 0.10);
+  --terrain-forest: rgba(40, 140, 65, 0.14);
+  --terrain-mountain: rgba(130, 135, 160, 0.12);
+  --terrain-coastal: rgba(40, 115, 180, 0.12);
+  --terrain-desert: rgba(210, 175, 75, 0.14);
+
+  /* ── Glow colors ── */
+  --glow-accent: rgba(61, 127, 212, 0.35);
+  --glow-gold: rgba(255, 200, 69, 0.30);
+  --glow-danger: rgba(232, 64, 85, 0.30);
+  --glow-success: rgba(56, 184, 84, 0.25);
+
+  /* ── Typography ── */
+  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Cascadia Code', 'Fira Code', ui-monospace, Consolas, monospace;
+
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}

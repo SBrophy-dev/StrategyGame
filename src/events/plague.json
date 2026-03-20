@@ -1,0 +1,12 @@
+{
+  "id": "plague",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["province.population == \"High\"", "nation.size >= 4"]
+  },
+  "effects": [
+    { "type": "resource_delta", "resource": "manpower", "amount": -15 },
+    { "type": "population_change", "targets": "affected_provinces", "change": -1 }
+  ],
+  "narrative": "Plague sweeps through {nation.name}'s densely populated provinces. The population declines sharply."
+}

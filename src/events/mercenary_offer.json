@@ -1,0 +1,12 @@
+{
+  "id": "mercenary_offer",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["nation.resources.manpower < 10", "nation.wars.length > 0"]
+  },
+  "effects": [
+    { "type": "resource_delta", "resource": "manpower", "amount": 15 },
+    { "type": "resource_delta", "resource": "gold", "amount": -30 }
+  ],
+  "narrative": "Mercenary companies offer their services to {nation.name}'s beleaguered forces — for a price."
+}

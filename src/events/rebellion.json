@@ -1,0 +1,11 @@
+{
+  "id": "rebellion",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["province.unrest >= 100"]
+  },
+  "effects": [
+    { "type": "owner_change", "newOwner": "rebel" }
+  ],
+  "narrative": "Unrest boils over in {nation.name}'s territory — a province rises in open rebellion!"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "assassination_attempt",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["nation.wars.length > 0", "nation.resources.influence < 20"]
+  },
+  "effects": [
+    { "type": "relation_delta", "targets": "all_neighbors", "amount": -20 },
+    { "type": "unrest_delta", "targets": "all_owned", "amount": 10 }
+  ],
+  "narrative": "An assassination attempt shakes {nation.name}'s court. Suspicion falls on neighboring powers."
+}

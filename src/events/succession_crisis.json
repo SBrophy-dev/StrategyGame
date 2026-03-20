@@ -1,0 +1,12 @@
+{
+  "id": "succession_crisis",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["nation.size >= 8", "no_military_action_turns >= 10"]
+  },
+  "effects": [
+    { "type": "unrest_delta", "targets": "all_owned", "amount": 20 },
+    { "type": "relation_delta", "targets": "all_neighbors", "amount": -10 }
+  ],
+  "narrative": "A succession crisis erupts in {nation.name}. Internal factions compete for power as neighbors watch closely."
+}

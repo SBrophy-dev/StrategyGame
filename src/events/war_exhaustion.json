@@ -1,0 +1,12 @@
+{
+  "id": "war_exhaustion",
+  "trigger": {
+    "type": "condition",
+    "conditions": ["nation.wars.length > 0", "nation.resources.manpower < 30", "war_turns >= 5"]
+  },
+  "effects": [
+    { "type": "resource_delta", "resource": "manpower", "amount": -10 },
+    { "type": "relation_delta", "targets": "all_at_war", "amount": -5 }
+  ],
+  "narrative": "Prolonged conflict drains {nation.name}'s manpower reserves. War-weariness spreads."
+}

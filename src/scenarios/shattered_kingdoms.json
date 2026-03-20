@@ -1,0 +1,3085 @@
+{
+  "meta": {
+    "id": "shattered_kingdoms",
+    "name": "The Shattered Kingdoms",
+    "description": "Ten kingdoms vie for control of Aurelion, a fractured continent scarred by the collapse of the old empire. Ancient capitals hold strategic value, trade routes wind through chokepoints, and alliances are forged — and broken — in the span of a single season.",
+    "turnLimit": 40,
+    "victoryConditions": {
+      "primaryObjective": {
+        "type": "control_regions",
+        "regions": [
+          "p01",
+          "p10",
+          "p20",
+          "p30",
+          "p40"
+        ],
+        "turnsHeld": 3
+      },
+      "dominationThreshold": 0.65,
+      "turnLimit": 40,
+      "tiebreaker": "total_score"
+    },
+    "exileWindowTurns": 5,
+    "exileRestoreCost": 30,
+    "siegeTurns": 3,
+    "relationDecayPerTurn": 1,
+    "majorBattleThreshold": 30
+  },
+  "world": {
+    "provinces": [
+      {
+        "id": "p01",
+        "name": "Aurelion Prime",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 4,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 2,
+        "population": "Thriving",
+        "strategicTag": "KeyRegion",
+        "layout": {
+          "x": 503,
+          "y": 297,
+          "polygon": [
+            [
+              478,
+              267
+            ],
+            [
+              528,
+              267
+            ],
+            [
+              543,
+              297
+            ],
+            [
+              528,
+              327
+            ],
+            [
+              478,
+              327
+            ],
+            [
+              463,
+              297
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p02",
+        "name": "Valdris",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 3,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "High",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 179,
+          "y": 81,
+          "polygon": [
+            [
+              149,
+              51
+            ],
+            [
+              209,
+              51
+            ],
+            [
+              224,
+              81
+            ],
+            [
+              209,
+              111
+            ],
+            [
+              149,
+              111
+            ],
+            [
+              134,
+              81
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p03",
+        "name": "Valdris Marches",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Military",
+        "unrest": 5,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 265,
+          "y": 124,
+          "polygon": [
+            [
+              235,
+              94
+            ],
+            [
+              295,
+              94
+            ],
+            [
+              310,
+              124
+            ],
+            [
+              295,
+              154
+            ],
+            [
+              235,
+              154
+            ],
+            [
+              220,
+              124
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p04",
+        "name": "Thornwall",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Industrial",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 136,
+          "y": 167,
+          "polygon": [
+            [
+              106,
+              137
+            ],
+            [
+              166,
+              137
+            ],
+            [
+              181,
+              167
+            ],
+            [
+              166,
+              197
+            ],
+            [
+              106,
+              197
+            ],
+            [
+              91,
+              167
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p05",
+        "name": "Greymoor",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 1,
+        "focus": null,
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 71,
+          "y": 254,
+          "polygon": [
+            [
+              41,
+              224
+            ],
+            [
+              101,
+              224
+            ],
+            [
+              116,
+              254
+            ],
+            [
+              101,
+              284
+            ],
+            [
+              41,
+              284
+            ],
+            [
+              26,
+              254
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p06",
+        "name": "Korven",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 3,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "High",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 341,
+          "y": 59,
+          "polygon": [
+            [
+              311,
+              29
+            ],
+            [
+              371,
+              29
+            ],
+            [
+              386,
+              59
+            ],
+            [
+              371,
+              89
+            ],
+            [
+              311,
+              89
+            ],
+            [
+              296,
+              59
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p07",
+        "name": "Korven Fields",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 416,
+          "y": 113,
+          "polygon": [
+            [
+              386,
+              83
+            ],
+            [
+              446,
+              83
+            ],
+            [
+              461,
+              113
+            ],
+            [
+              446,
+              143
+            ],
+            [
+              386,
+              143
+            ],
+            [
+              371,
+              113
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p08",
+        "name": "Silverrun",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 2,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": "Port",
+        "layout": {
+          "x": 481,
+          "y": 59,
+          "polygon": [
+            [
+              451,
+              29
+            ],
+            [
+              511,
+              29
+            ],
+            [
+              526,
+              59
+            ],
+            [
+              511,
+              89
+            ],
+            [
+              451,
+              89
+            ],
+            [
+              436,
+              59
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p09",
+        "name": "Drakenhold",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 3,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 2,
+        "population": "Medium",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 632,
+          "y": 102,
+          "polygon": [
+            [
+              602,
+              72
+            ],
+            [
+              662,
+              72
+            ],
+            [
+              677,
+              102
+            ],
+            [
+              662,
+              132
+            ],
+            [
+              602,
+              132
+            ],
+            [
+              587,
+              102
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p10",
+        "name": "Ashen Pass",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 2,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Low",
+        "strategicTag": "KeyRegion",
+        "layout": {
+          "x": 568,
+          "y": 189,
+          "polygon": [
+            [
+              538,
+              159
+            ],
+            [
+              598,
+              159
+            ],
+            [
+              613,
+              189
+            ],
+            [
+              598,
+              219
+            ],
+            [
+              538,
+              219
+            ],
+            [
+              523,
+              189
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p11",
+        "name": "Embervale",
+        "ownerId": null,
+        "terrain": "Desert",
+        "devLevel": 2,
+        "focus": "Industrial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 719,
+          "y": 189,
+          "polygon": [
+            [
+              689,
+              159
+            ],
+            [
+              749,
+              159
+            ],
+            [
+              764,
+              189
+            ],
+            [
+              749,
+              219
+            ],
+            [
+              689,
+              219
+            ],
+            [
+              674,
+              189
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p12",
+        "name": "Sunhaven",
+        "ownerId": null,
+        "terrain": "Desert",
+        "devLevel": 3,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "High",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 805,
+          "y": 135,
+          "polygon": [
+            [
+              775,
+              105
+            ],
+            [
+              835,
+              105
+            ],
+            [
+              850,
+              135
+            ],
+            [
+              835,
+              165
+            ],
+            [
+              775,
+              165
+            ],
+            [
+              760,
+              135
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p13",
+        "name": "Dunewatch",
+        "ownerId": null,
+        "terrain": "Desert",
+        "devLevel": 1,
+        "focus": null,
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 848,
+          "y": 232,
+          "polygon": [
+            [
+              818,
+              202
+            ],
+            [
+              878,
+              202
+            ],
+            [
+              893,
+              232
+            ],
+            [
+              878,
+              262
+            ],
+            [
+              818,
+              262
+            ],
+            [
+              803,
+              232
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p14",
+        "name": "Tidemarch",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 3,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "High",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 71,
+          "y": 383,
+          "polygon": [
+            [
+              41,
+              353
+            ],
+            [
+              101,
+              353
+            ],
+            [
+              116,
+              383
+            ],
+            [
+              101,
+              413
+            ],
+            [
+              41,
+              413
+            ],
+            [
+              26,
+              383
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p15",
+        "name": "Saltshore",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": "Port",
+        "layout": {
+          "x": 17,
+          "y": 459,
+          "polygon": [
+            [
+              -13,
+              429
+            ],
+            [
+              47,
+              429
+            ],
+            [
+              62,
+              459
+            ],
+            [
+              47,
+              489
+            ],
+            [
+              -13,
+              489
+            ],
+            [
+              -28,
+              459
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p16",
+        "name": "Mistwood",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 179,
+          "y": 318,
+          "polygon": [
+            [
+              149,
+              288
+            ],
+            [
+              209,
+              288
+            ],
+            [
+              224,
+              318
+            ],
+            [
+              209,
+              348
+            ],
+            [
+              149,
+              348
+            ],
+            [
+              134,
+              318
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p17",
+        "name": "Iron Ridge",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 3,
+        "focus": "Industrial",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Medium",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 287,
+          "y": 254,
+          "polygon": [
+            [
+              257,
+              224
+            ],
+            [
+              317,
+              224
+            ],
+            [
+              332,
+              254
+            ],
+            [
+              317,
+              284
+            ],
+            [
+              257,
+              284
+            ],
+            [
+              242,
+              254
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p18",
+        "name": "Stonehearth",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 2,
+        "focus": "Industrial",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 233,
+          "y": 405,
+          "polygon": [
+            [
+              203,
+              375
+            ],
+            [
+              263,
+              375
+            ],
+            [
+              278,
+              405
+            ],
+            [
+              263,
+              435
+            ],
+            [
+              203,
+              435
+            ],
+            [
+              188,
+              405
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p19",
+        "name": "Goldmere",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 3,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "High",
+        "strategicTag": null,
+        "layout": {
+          "x": 395,
+          "y": 243,
+          "polygon": [
+            [
+              365,
+              213
+            ],
+            [
+              425,
+              213
+            ],
+            [
+              440,
+              243
+            ],
+            [
+              425,
+              273
+            ],
+            [
+              365,
+              273
+            ],
+            [
+              350,
+              243
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p20",
+        "name": "Crown's Reach",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 4,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Thriving",
+        "strategicTag": "KeyRegion",
+        "layout": {
+          "x": 395,
+          "y": 372,
+          "polygon": [
+            [
+              365,
+              342
+            ],
+            [
+              425,
+              342
+            ],
+            [
+              440,
+              372
+            ],
+            [
+              425,
+              402
+            ],
+            [
+              365,
+              402
+            ],
+            [
+              350,
+              372
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p21",
+        "name": "Brightfield",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 330,
+          "y": 448,
+          "polygon": [
+            [
+              300,
+              418
+            ],
+            [
+              360,
+              418
+            ],
+            [
+              375,
+              448
+            ],
+            [
+              360,
+              478
+            ],
+            [
+              300,
+              478
+            ],
+            [
+              285,
+              448
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p22",
+        "name": "Ravensgate",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 3,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 2,
+        "population": "Medium",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 503,
+          "y": 448,
+          "polygon": [
+            [
+              473,
+              418
+            ],
+            [
+              533,
+              418
+            ],
+            [
+              548,
+              448
+            ],
+            [
+              533,
+              478
+            ],
+            [
+              473,
+              478
+            ],
+            [
+              458,
+              448
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p23",
+        "name": "Duskhollow",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 438,
+          "y": 524,
+          "polygon": [
+            [
+              408,
+              494
+            ],
+            [
+              468,
+              494
+            ],
+            [
+              483,
+              524
+            ],
+            [
+              468,
+              554
+            ],
+            [
+              408,
+              554
+            ],
+            [
+              393,
+              524
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p24",
+        "name": "Cinder Wastes",
+        "ownerId": null,
+        "terrain": "Desert",
+        "devLevel": 1,
+        "focus": null,
+        "unrest": 10,
+        "fortLevel": 0,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 632,
+          "y": 318,
+          "polygon": [
+            [
+              602,
+              288
+            ],
+            [
+              662,
+              288
+            ],
+            [
+              677,
+              318
+            ],
+            [
+              662,
+              348
+            ],
+            [
+              602,
+              348
+            ],
+            [
+              587,
+              318
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p25",
+        "name": "Blackspire",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 3,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 3,
+        "population": "Medium",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 719,
+          "y": 383,
+          "polygon": [
+            [
+              689,
+              353
+            ],
+            [
+              749,
+              353
+            ],
+            [
+              764,
+              383
+            ],
+            [
+              749,
+              413
+            ],
+            [
+              689,
+              413
+            ],
+            [
+              674,
+              383
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p26",
+        "name": "Wraithfen",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 1,
+        "focus": null,
+        "unrest": 15,
+        "fortLevel": 0,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 784,
+          "y": 308,
+          "polygon": [
+            [
+              754,
+              278
+            ],
+            [
+              814,
+              278
+            ],
+            [
+              829,
+              308
+            ],
+            [
+              814,
+              338
+            ],
+            [
+              754,
+              338
+            ],
+            [
+              739,
+              308
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p27",
+        "name": "Oakheart",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 611,
+          "y": 448,
+          "polygon": [
+            [
+              581,
+              418
+            ],
+            [
+              641,
+              418
+            ],
+            [
+              656,
+              448
+            ],
+            [
+              641,
+              478
+            ],
+            [
+              581,
+              478
+            ],
+            [
+              566,
+              448
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p28",
+        "name": "Stormwatch",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 3,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Medium",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 827,
+          "y": 459,
+          "polygon": [
+            [
+              797,
+              429
+            ],
+            [
+              857,
+              429
+            ],
+            [
+              872,
+              459
+            ],
+            [
+              857,
+              489
+            ],
+            [
+              797,
+              489
+            ],
+            [
+              782,
+              459
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p29",
+        "name": "Tidecaller Bay",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 2,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": "Port",
+        "layout": {
+          "x": 892,
+          "y": 383,
+          "polygon": [
+            [
+              862,
+              353
+            ],
+            [
+              922,
+              353
+            ],
+            [
+              937,
+              383
+            ],
+            [
+              922,
+              413
+            ],
+            [
+              862,
+              413
+            ],
+            [
+              847,
+              383
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p30",
+        "name": "Hearthstone",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 4,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Thriving",
+        "strategicTag": "KeyRegion",
+        "layout": {
+          "x": 287,
+          "y": 556,
+          "polygon": [
+            [
+              257,
+              526
+            ],
+            [
+              317,
+              526
+            ],
+            [
+              332,
+              556
+            ],
+            [
+              317,
+              586
+            ],
+            [
+              257,
+              586
+            ],
+            [
+              242,
+              556
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p31",
+        "name": "Ferndale",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 179,
+          "y": 513,
+          "polygon": [
+            [
+              149,
+              483
+            ],
+            [
+              209,
+              483
+            ],
+            [
+              224,
+              513
+            ],
+            [
+              209,
+              543
+            ],
+            [
+              149,
+              543
+            ],
+            [
+              134,
+              513
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p32",
+        "name": "Windholme",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 3,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "High",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 125,
+          "y": 599,
+          "polygon": [
+            [
+              95,
+              569
+            ],
+            [
+              155,
+              569
+            ],
+            [
+              170,
+              599
+            ],
+            [
+              155,
+              629
+            ],
+            [
+              95,
+              629
+            ],
+            [
+              80,
+              599
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p33",
+        "name": "Eldergrove",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 49,
+          "y": 545,
+          "polygon": [
+            [
+              19,
+              515
+            ],
+            [
+              79,
+              515
+            ],
+            [
+              94,
+              545
+            ],
+            [
+              79,
+              575
+            ],
+            [
+              19,
+              575
+            ],
+            [
+              4,
+              545
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p34",
+        "name": "Frostpeak",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 2,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 2,
+        "population": "Low",
+        "strategicTag": "Capital",
+        "layout": {
+          "x": 503,
+          "y": 578,
+          "polygon": [
+            [
+              473,
+              548
+            ],
+            [
+              533,
+              548
+            ],
+            [
+              548,
+              578
+            ],
+            [
+              533,
+              608
+            ],
+            [
+              473,
+              608
+            ],
+            [
+              458,
+              578
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p35",
+        "name": "Icevein",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 1,
+        "focus": null,
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 568,
+          "y": 534,
+          "polygon": [
+            [
+              538,
+              504
+            ],
+            [
+              598,
+              504
+            ],
+            [
+              613,
+              534
+            ],
+            [
+              598,
+              564
+            ],
+            [
+              538,
+              564
+            ],
+            [
+              523,
+              534
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p36",
+        "name": "Havenport",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 3,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "High",
+        "strategicTag": "Port",
+        "layout": {
+          "x": 665,
+          "y": 556,
+          "polygon": [
+            [
+              635,
+              526
+            ],
+            [
+              695,
+              526
+            ],
+            [
+              710,
+              556
+            ],
+            [
+              695,
+              586
+            ],
+            [
+              635,
+              586
+            ],
+            [
+              620,
+              556
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p37",
+        "name": "Ashfall",
+        "ownerId": null,
+        "terrain": "Desert",
+        "devLevel": 2,
+        "focus": "Industrial",
+        "unrest": 5,
+        "fortLevel": 0,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 762,
+          "y": 513,
+          "polygon": [
+            [
+              732,
+              483
+            ],
+            [
+              792,
+              483
+            ],
+            [
+              807,
+              513
+            ],
+            [
+              792,
+              543
+            ],
+            [
+              732,
+              543
+            ],
+            [
+              717,
+              513
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p38",
+        "name": "Copperdale",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 2,
+        "focus": "Industrial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 341,
+          "y": 156,
+          "polygon": [
+            [
+              311,
+              126
+            ],
+            [
+              371,
+              126
+            ],
+            [
+              386,
+              156
+            ],
+            [
+              371,
+              186
+            ],
+            [
+              311,
+              186
+            ],
+            [
+              296,
+              156
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p39",
+        "name": "Moonrise",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 2,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": "Port",
+        "layout": {
+          "x": 935,
+          "y": 297,
+          "polygon": [
+            [
+              905,
+              267
+            ],
+            [
+              965,
+              267
+            ],
+            [
+              980,
+              297
+            ],
+            [
+              965,
+              327
+            ],
+            [
+              905,
+              327
+            ],
+            [
+              890,
+              297
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p40",
+        "name": "Crownspire",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 4,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 3,
+        "population": "Thriving",
+        "strategicTag": "KeyRegion",
+        "layout": {
+          "x": 503,
+          "y": 167,
+          "polygon": [
+            [
+              473,
+              137
+            ],
+            [
+              533,
+              137
+            ],
+            [
+              548,
+              167
+            ],
+            [
+              533,
+              197
+            ],
+            [
+              473,
+              197
+            ],
+            [
+              458,
+              167
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p41",
+        "name": "Willowmere",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 125,
+          "y": 459,
+          "polygon": [
+            [
+              95,
+              429
+            ],
+            [
+              155,
+              429
+            ],
+            [
+              170,
+              459
+            ],
+            [
+              155,
+              489
+            ],
+            [
+              95,
+              489
+            ],
+            [
+              80,
+              459
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p42",
+        "name": "Redcliff",
+        "ownerId": null,
+        "terrain": "Mountain",
+        "devLevel": 2,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Low",
+        "strategicTag": null,
+        "layout": {
+          "x": 697,
+          "y": 275,
+          "polygon": [
+            [
+              667,
+              245
+            ],
+            [
+              727,
+              245
+            ],
+            [
+              742,
+              275
+            ],
+            [
+              727,
+              305
+            ],
+            [
+              667,
+              305
+            ],
+            [
+              652,
+              275
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p43",
+        "name": "Lakeholm",
+        "ownerId": null,
+        "terrain": "Plains",
+        "devLevel": 2,
+        "focus": "Agricultural",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 395,
+          "y": 491,
+          "polygon": [
+            [
+              365,
+              461
+            ],
+            [
+              425,
+              461
+            ],
+            [
+              440,
+              491
+            ],
+            [
+              425,
+              521
+            ],
+            [
+              365,
+              521
+            ],
+            [
+              350,
+              491
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p44",
+        "name": "Seabreeze",
+        "ownerId": null,
+        "terrain": "Coastal",
+        "devLevel": 2,
+        "focus": "Commercial",
+        "unrest": 0,
+        "fortLevel": 0,
+        "population": "Medium",
+        "strategicTag": "Port",
+        "layout": {
+          "x": 881,
+          "y": 534,
+          "polygon": [
+            [
+              851,
+              504
+            ],
+            [
+              911,
+              504
+            ],
+            [
+              926,
+              534
+            ],
+            [
+              911,
+              564
+            ],
+            [
+              851,
+              564
+            ],
+            [
+              836,
+              534
+            ]
+          ]
+        }
+      },
+      {
+        "id": "p45",
+        "name": "Valewatch",
+        "ownerId": null,
+        "terrain": "Forest",
+        "devLevel": 2,
+        "focus": "Military",
+        "unrest": 0,
+        "fortLevel": 1,
+        "population": "Medium",
+        "strategicTag": null,
+        "layout": {
+          "x": 589,
+          "y": 383,
+          "polygon": [
+            [
+              559,
+              353
+            ],
+            [
+              619,
+              353
+            ],
+            [
+              634,
+              383
+            ],
+            [
+              619,
+              413
+            ],
+            [
+              559,
+              413
+            ],
+            [
+              544,
+              383
+            ]
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "sourceId": "p02",
+        "targetId": "p03",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p02",
+        "targetId": "p04",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p03",
+        "targetId": "p06",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p03",
+        "targetId": "p38",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p04",
+        "targetId": "p05",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p04",
+        "targetId": "p16",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p05",
+        "targetId": "p14",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": true,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p05",
+        "targetId": "p16",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p06",
+        "targetId": "p07",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p06",
+        "targetId": "p38",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p07",
+        "targetId": "p08",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p07",
+        "targetId": "p40",
+        "movementCost": 1,
+        "tradeValue": 4,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p08",
+        "targetId": "p09",
+        "movementCost": 2,
+        "tradeValue": 2,
+        "chokepoint": true,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p08",
+        "targetId": "p40",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p09",
+        "targetId": "p10",
+        "movementCost": 2,
+        "tradeValue": 2,
+        "chokepoint": true,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p09",
+        "targetId": "p11",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p10",
+        "targetId": "p01",
+        "movementCost": 1,
+        "tradeValue": 4,
+        "chokepoint": true,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p10",
+        "targetId": "p24",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p10",
+        "targetId": "p42",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p11",
+        "targetId": "p12",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p11",
+        "targetId": "p42",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p12",
+        "targetId": "p13",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p12",
+        "targetId": "p39",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p13",
+        "targetId": "p26",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p13",
+        "targetId": "p39",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p14",
+        "targetId": "p15",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p14",
+        "targetId": "p16",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p14",
+        "targetId": "p41",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p15",
+        "targetId": "p33",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p16",
+        "targetId": "p17",
+        "movementCost": 2,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p16",
+        "targetId": "p19",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p17",
+        "targetId": "p18",
+        "movementCost": 2,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p17",
+        "targetId": "p19",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p18",
+        "targetId": "p21",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p18",
+        "targetId": "p31",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p19",
+        "targetId": "p01",
+        "movementCost": 1,
+        "tradeValue": 5,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p19",
+        "targetId": "p20",
+        "movementCost": 1,
+        "tradeValue": 4,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p20",
+        "targetId": "p21",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p20",
+        "targetId": "p22",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p20",
+        "targetId": "p45",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p21",
+        "targetId": "p30",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p21",
+        "targetId": "p43",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p22",
+        "targetId": "p23",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p22",
+        "targetId": "p27",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p22",
+        "targetId": "p45",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p23",
+        "targetId": "p30",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p23",
+        "targetId": "p43",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p24",
+        "targetId": "p25",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p24",
+        "targetId": "p45",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p24",
+        "targetId": "p42",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p25",
+        "targetId": "p26",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": true,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p25",
+        "targetId": "p27",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p25",
+        "targetId": "p28",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p26",
+        "targetId": "p29",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p26",
+        "targetId": "p42",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p27",
+        "targetId": "p36",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p27",
+        "targetId": "p45",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p28",
+        "targetId": "p29",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p28",
+        "targetId": "p37",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p28",
+        "targetId": "p44",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p29",
+        "targetId": "p39",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p30",
+        "targetId": "p31",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p30",
+        "targetId": "p34",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p31",
+        "targetId": "p32",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p31",
+        "targetId": "p41",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p32",
+        "targetId": "p33",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p33",
+        "targetId": "p41",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p34",
+        "targetId": "p35",
+        "movementCost": 2,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p34",
+        "targetId": "p43",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p35",
+        "targetId": "p36",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p35",
+        "targetId": "p27",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p36",
+        "targetId": "p37",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p36",
+        "targetId": "p44",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p37",
+        "targetId": "p44",
+        "movementCost": 1,
+        "tradeValue": 1,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p38",
+        "targetId": "p40",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p38",
+        "targetId": "p19",
+        "movementCost": 1,
+        "tradeValue": 3,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p40",
+        "targetId": "p01",
+        "movementCost": 1,
+        "tradeValue": 5,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p01",
+        "targetId": "p24",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      },
+      {
+        "sourceId": "p41",
+        "targetId": "p15",
+        "movementCost": 1,
+        "tradeValue": 2,
+        "chokepoint": false,
+        "tradeActive": false
+      }
+    ]
+  },
+  "nations": [
+    {
+      "id": "n01",
+      "name": "Valdris",
+      "color": "#2980b9",
+      "archetype": "Trader",
+      "modifiers": [
+        "Honorable",
+        "Paranoid"
+      ],
+      "agenda": {
+        "type": "economic_dominance",
+        "priority": "high"
+      }
+    },
+    {
+      "id": "n02",
+      "name": "Korven League",
+      "color": "#27ae60",
+      "archetype": "Trader",
+      "modifiers": [
+        "Opportunist"
+      ],
+      "agenda": {
+        "type": "economic_dominance",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "n03",
+      "name": "Drakenhold",
+      "color": "#c0392b",
+      "archetype": "Expansionist",
+      "modifiers": [
+        "Militarist",
+        "Grudgeholder"
+      ],
+      "agenda": {
+        "type": "military_supremacy",
+        "priority": "high"
+      }
+    },
+    {
+      "id": "n04",
+      "name": "Sunhaven Emirate",
+      "color": "#f39c12",
+      "archetype": "Hegemon",
+      "modifiers": [
+        "NavalFocus"
+      ],
+      "agenda": {
+        "type": "diplomatic_hegemony",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "n05",
+      "name": "Tidemarch",
+      "color": "#1abc9c",
+      "archetype": "Trader",
+      "modifiers": [
+        "NavalFocus",
+        "Honorable"
+      ],
+      "agenda": {
+        "type": "economic_dominance",
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "n06",
+      "name": "Iron Ridge Compact",
+      "color": "#7f8c8d",
+      "archetype": "Isolationist",
+      "modifiers": [
+        "Paranoid"
+      ],
+      "agenda": {
+        "type": "control_region_cluster",
+        "targetRegions": [
+          "p17",
+          "p18",
+          "p19"
+        ],
+        "priority": "high"
+      }
+    },
+    {
+      "id": "n07",
+      "name": "Ravensgate",
+      "color": "#8e44ad",
+      "archetype": "Expansionist",
+      "modifiers": [
+        "Opportunist",
+        "Militarist"
+      ],
+      "agenda": {
+        "type": "control_region_cluster",
+        "targetRegions": [
+          "p20",
+          "p22",
+          "p30"
+        ],
+        "priority": "high"
+      }
+    },
+    {
+      "id": "n08",
+      "name": "Blackspire Dominion",
+      "color": "#5b7fa5",
+      "archetype": "Hegemon",
+      "modifiers": [
+        "Grudgeholder",
+        "Militarist"
+      ],
+      "agenda": {
+        "type": "military_supremacy",
+        "priority": "high"
+      }
+    },
+    {
+      "id": "n09",
+      "name": "Stormwatch",
+      "color": "#2ed8d8",
+      "archetype": "Expansionist",
+      "modifiers": [
+        "NavalFocus",
+        "Opportunist"
+      ],
+      "agenda": {
+        "type": "control_region_cluster",
+        "targetRegions": [
+          "p28",
+          "p29",
+          "p44"
+        ],
+        "priority": "medium"
+      }
+    },
+    {
+      "id": "n10",
+      "name": "Windholme",
+      "color": "#db6ad4",
+      "archetype": "Isolationist",
+      "modifiers": [
+        "Honorable"
+      ],
+      "agenda": {
+        "type": "control_region_cluster",
+        "targetRegions": [
+          "p30",
+          "p31",
+          "p32"
+        ],
+        "priority": "medium"
+      }
+    }
+  ],
+  "startingState": {
+    "provinceOwnership": {
+      "p02": "n01",
+      "p03": "n01",
+      "p04": "n01",
+      "p05": "n01",
+      "p06": "n02",
+      "p07": "n02",
+      "p08": "n02",
+      "p38": "n02",
+      "p09": "n03",
+      "p10": "n03",
+      "p11": "n03",
+      "p40": "n03",
+      "p12": "n04",
+      "p13": "n04",
+      "p39": "n04",
+      "p42": "n04",
+      "p14": "n05",
+      "p15": "n05",
+      "p41": "n05",
+      "p17": "n06",
+      "p18": "n06",
+      "p16": "n06",
+      "p19": "n06",
+      "p22": "n07",
+      "p23": "n07",
+      "p43": "n07",
+      "p21": "n07",
+      "p25": "n08",
+      "p26": "n08",
+      "p24": "n08",
+      "p27": "n08",
+      "p28": "n09",
+      "p29": "n09",
+      "p37": "n09",
+      "p44": "n09",
+      "p32": "n10",
+      "p33": "n10",
+      "p31": "n10",
+      "p30": "n10",
+      "p34": "n07",
+      "p35": "n08",
+      "p36": "n09",
+      "p45": "n07",
+      "p01": "n03",
+      "p20": "n06"
+    },
+    "armies": [
+      {
+        "id": "a01",
+        "type": "Land",
+        "strength": 12,
+        "provinceId": "p02",
+        "ownerId": "n01"
+      },
+      {
+        "id": "a02",
+        "type": "Land",
+        "strength": 8,
+        "provinceId": "p04",
+        "ownerId": "n01"
+      },
+      {
+        "id": "a03",
+        "type": "Land",
+        "strength": 10,
+        "provinceId": "p06",
+        "ownerId": "n02"
+      },
+      {
+        "id": "a04",
+        "type": "Land",
+        "strength": 6,
+        "provinceId": "p08",
+        "ownerId": "n02"
+      },
+      {
+        "id": "a05",
+        "type": "Land",
+        "strength": 15,
+        "provinceId": "p09",
+        "ownerId": "n03"
+      },
+      {
+        "id": "a06",
+        "type": "Land",
+        "strength": 10,
+        "provinceId": "p01",
+        "ownerId": "n03"
+      },
+      {
+        "id": "a07",
+        "type": "Land",
+        "strength": 8,
+        "provinceId": "p12",
+        "ownerId": "n04"
+      },
+      {
+        "id": "a08",
+        "type": "Naval",
+        "strength": 6,
+        "provinceId": "p39",
+        "ownerId": "n04"
+      },
+      {
+        "id": "a09",
+        "type": "Land",
+        "strength": 8,
+        "provinceId": "p14",
+        "ownerId": "n05"
+      },
+      {
+        "id": "a10",
+        "type": "Naval",
+        "strength": 5,
+        "provinceId": "p15",
+        "ownerId": "n05"
+      },
+      {
+        "id": "a11",
+        "type": "Land",
+        "strength": 10,
+        "provinceId": "p17",
+        "ownerId": "n06"
+      },
+      {
+        "id": "a12",
+        "type": "Land",
+        "strength": 6,
+        "provinceId": "p20",
+        "ownerId": "n06"
+      },
+      {
+        "id": "a13",
+        "type": "Land",
+        "strength": 14,
+        "provinceId": "p22",
+        "ownerId": "n07"
+      },
+      {
+        "id": "a14",
+        "type": "Land",
+        "strength": 8,
+        "provinceId": "p34",
+        "ownerId": "n07"
+      },
+      {
+        "id": "a15",
+        "type": "Land",
+        "strength": 15,
+        "provinceId": "p25",
+        "ownerId": "n08"
+      },
+      {
+        "id": "a16",
+        "type": "Land",
+        "strength": 8,
+        "provinceId": "p26",
+        "ownerId": "n08"
+      },
+      {
+        "id": "a17",
+        "type": "Land",
+        "strength": 10,
+        "provinceId": "p28",
+        "ownerId": "n09"
+      },
+      {
+        "id": "a18",
+        "type": "Naval",
+        "strength": 8,
+        "provinceId": "p29",
+        "ownerId": "n09"
+      },
+      {
+        "id": "a19",
+        "type": "Land",
+        "strength": 10,
+        "provinceId": "p32",
+        "ownerId": "n10"
+      },
+      {
+        "id": "a20",
+        "type": "Land",
+        "strength": 6,
+        "provinceId": "p30",
+        "ownerId": "n10"
+      }
+    ],
+    "resources": {
+      "n01": {
+        "gold": 80,
+        "food": 60,
+        "production": 40,
+        "influence": 50,
+        "manpower": 30
+      },
+      "n02": {
+        "gold": 90,
+        "food": 50,
+        "production": 35,
+        "influence": 45,
+        "manpower": 25
+      },
+      "n03": {
+        "gold": 60,
+        "food": 40,
+        "production": 50,
+        "influence": 30,
+        "manpower": 50
+      },
+      "n04": {
+        "gold": 70,
+        "food": 35,
+        "production": 30,
+        "influence": 60,
+        "manpower": 20
+      },
+      "n05": {
+        "gold": 75,
+        "food": 55,
+        "production": 25,
+        "influence": 40,
+        "manpower": 20
+      },
+      "n06": {
+        "gold": 50,
+        "food": 45,
+        "production": 55,
+        "influence": 25,
+        "manpower": 35
+      },
+      "n07": {
+        "gold": 55,
+        "food": 40,
+        "production": 45,
+        "influence": 30,
+        "manpower": 45
+      },
+      "n08": {
+        "gold": 45,
+        "food": 30,
+        "production": 40,
+        "influence": 40,
+        "manpower": 40
+      },
+      "n09": {
+        "gold": 65,
+        "food": 35,
+        "production": 35,
+        "influence": 35,
+        "manpower": 30
+      },
+      "n10": {
+        "gold": 60,
+        "food": 65,
+        "production": 30,
+        "influence": 20,
+        "manpower": 25
+      }
+    },
+    "relations": {
+      "n01_n02": 15,
+      "n01_n03": -20,
+      "n01_n05": 10,
+      "n01_n06": 5,
+      "n02_n03": -10,
+      "n02_n04": 0,
+      "n02_n06": 10,
+      "n03_n04": -15,
+      "n03_n06": -25,
+      "n03_n08": -30,
+      "n04_n09": -10,
+      "n04_n12": 5,
+      "n05_n06": 5,
+      "n05_n10": 10,
+      "n06_n07": -15,
+      "n07_n08": -20,
+      "n07_n10": -10,
+      "n08_n09": -5,
+      "n09_n04": -15,
+      "n10_n05": 15
+    }
+  },
+  "scriptedEvents": [
+    {
+      "id": "aurelion_contested",
+      "trigger": {
+        "type": "turn",
+        "onTurn": 5
+      },
+      "effects": [
+        {
+          "type": "unrest_delta",
+          "targets": "all_owned",
+          "amount": 5
+        }
+      ],
+      "narrative": "Rumors of the old empire's lost treasury surface. Every kingdom turns its eyes toward Aurelion Prime."
+    },
+    {
+      "id": "drought_in_south",
+      "trigger": {
+        "type": "turn",
+        "onTurn": 12
+      },
+      "effects": [
+        {
+          "type": "resource_delta",
+          "resource": "food",
+          "amount": -20
+        },
+        {
+          "type": "unrest_delta",
+          "targets": "all_owned",
+          "amount": 8
+        }
+      ],
+      "narrative": "A severe drought grips the southern provinces. Food stores dwindle and unrest rises."
+    },
+    {
+      "id": "trade_boom",
+      "trigger": {
+        "type": "turn",
+        "onTurn": 20
+      },
+      "effects": [
+        {
+          "type": "resource_delta",
+          "resource": "gold",
+          "amount": 30
+        }
+      ],
+      "narrative": "A trade boom sweeps across the continent. Merchants prosper and coffers swell."
+    },
+    {
+      "id": "ashen_pass_eruption",
+      "trigger": {
+        "type": "scripted",
+        "conditions": [
+          "war_turns >= 8"
+        ]
+      },
+      "effects": [
+        {
+          "type": "unrest_delta",
+          "targets": "all_owned",
+          "amount": 12
+        },
+        {
+          "type": "resource_delta",
+          "resource": "production",
+          "amount": -15
+        }
+      ],
+      "narrative": "The volcanic mountains near Ashen Pass erupt, blanketing nearby lands in ash. Production grinds to a halt."
+    }
+  ],
+  "genericEvents": [
+    "rebellion",
+    "war_exhaustion",
+    "assassination_attempt",
+    "economic_collapse_warning",
+    "breakthrough",
+    "natural_disaster",
+    "succession_crisis",
+    "plague",
+    "mercenary_offer"
+  ]
+}
