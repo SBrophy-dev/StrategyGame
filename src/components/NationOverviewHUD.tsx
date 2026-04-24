@@ -1,4 +1,5 @@
 import type { GameState, Nation } from '../types';
+import GameIcon from './GameIcon';
 
 // ── Tuneable constants ─────────────────────────────────────────────────────
 
@@ -148,7 +149,7 @@ export default function NationOverviewHUD({
           onClick={onToggle}
           title={visible ? 'Collapse HUD' : 'Expand HUD'}
         >
-          {visible ? '▲' : '▼'}
+          <GameIcon name={visible ? 'chevron-up' : 'chevron-down'} size={12} />
         </button>
       </div>
 
@@ -180,7 +181,7 @@ export default function NationOverviewHUD({
               <div key={row.nation.id} className={rowClass}>
                 {/* Crown for current leader */}
                 <span className="hud__crown">
-                  {row.isLeader ? '★' : ''}
+                  {row.isLeader && <GameIcon name="victory" size={11} color="var(--gold)" />}
                 </span>
 
                 {/* Nation color swatch */}

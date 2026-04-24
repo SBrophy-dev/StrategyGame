@@ -1,4 +1,5 @@
 import type { ResourceLedger } from '../types';
+import GameIcon from './GameIcon';
 
 export interface TopBarProps {
   turn: number;
@@ -31,41 +32,41 @@ export default function TopBar({
         Turn {turn} / {turnLimit} &mdash; {playerNationName}
       </div>
 
-      {gameOver ? (
-        <div className="topbar__game-over">
-          <span className="topbar__game-over-label">
-            {winner ? `Winner: ${winner}` : 'Game Over'}
-          </span>
-        </div>
-      ) : (
-        <div className="topbar__resources">
-          <span className="topbar__resource topbar__resource--gold">
-            <span className="topbar__resource-icon" />
-            <span className="topbar__resource-icon-label">{'\u2B21'}</span>
-            {resources.gold}
-          </span>
-          <span className="topbar__resource topbar__resource--food">
-            <span className="topbar__resource-icon" />
-            <span className="topbar__resource-icon-label">{'\u274B'}</span>
-            {resources.food}
-          </span>
-          <span className="topbar__resource topbar__resource--production">
-            <span className="topbar__resource-icon" />
-            <span className="topbar__resource-icon-label">{'\u2692'}</span>
-            {resources.production}
-          </span>
-          <span className="topbar__resource topbar__resource--manpower">
-            <span className="topbar__resource-icon" />
-            <span className="topbar__resource-icon-label">{'\u2694'}</span>
-            {resources.manpower}
-          </span>
-          <span className="topbar__resource topbar__resource--influence">
-            <span className="topbar__resource-icon" />
-            <span className="topbar__resource-icon-label">{'\u2726'}</span>
-            {resources.influence}
-          </span>
-        </div>
-      )}
+       {gameOver ? (
+         <div className="topbar__game-over">
+           <span className="topbar__game-over-label">
+             {winner ? `Winner: ${winner}` : 'Game Over'}
+           </span>
+         </div>
+       ) : (
+         <div className="topbar__resources">
+           <span className="topbar__resource topbar__resource--gold">
+             <span className="topbar__resource-icon" />
+             <GameIcon name="gold" size={16} title="Gold" className="topbar__resource-icon-label" />
+             {resources.gold}
+           </span>
+           <span className="topbar__resource topbar__resource--food">
+             <span className="topbar__resource-icon" />
+             <GameIcon name="food" size={16} title="Food" className="topbar__resource-icon-label" />
+             {resources.food}
+           </span>
+           <span className="topbar__resource topbar__resource--production">
+             <span className="topbar__resource-icon" />
+             <GameIcon name="production" size={16} title="Production" className="topbar__resource-icon-label" />
+             {resources.production}
+           </span>
+           <span className="topbar__resource topbar__resource--manpower">
+             <span className="topbar__resource-icon" />
+             <GameIcon name="manpower" size={16} title="Manpower" className="topbar__resource-icon-label" />
+             {resources.manpower}
+           </span>
+           <span className="topbar__resource topbar__resource--influence">
+             <span className="topbar__resource-icon" />
+             <GameIcon name="influence" size={16} title="Influence" className="topbar__resource-icon-label" />
+             {resources.influence}
+           </span>
+         </div>
+       )}
 
       <div className="topbar__toolbar">
         {!gameOver && (

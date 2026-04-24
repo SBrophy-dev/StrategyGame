@@ -1,4 +1,5 @@
 import type { Order, ActionBudget, Nation } from '../types';
+import GameIcon from './GameIcon';
 
 export interface BottomBarProps {
   orders: Order[];
@@ -38,17 +39,17 @@ function getOrderLabel(order: Order, nations: Nation[]): string {
 
   switch (order.type) {
     case 'propose_agreement':
-      return `${order.agreementType} → ${nationName(order.targetNationId)}`;
+      return `${order.agreementType} \u2192 ${nationName(order.targetNationId)}`;
     case 'break_agreement':
       return `Break ${order.agreementType} with ${nationName(order.targetNationId)}`;
     case 'declare_war':
-      return `War → ${nationName(order.targetNationId)}`;
+      return `War \u2192 ${nationName(order.targetNationId)}`;
     case 'offer_peace':
-      return `Peace → ${nationName(order.targetNationId)}`;
+      return `Peace \u2192 ${nationName(order.targetNationId)}`;
     case 'move_army':
-      return `Move army → ${order.toProvinceId}`;
+      return `Move army \u2192 ${order.toProvinceId}`;
     case 'retreat':
-      return `Retreat → ${order.toProvinceId}`;
+      return `Retreat \u2192 ${order.toProvinceId}`;
     case 'blockade':
       return `Blockade ${order.edgeSourceId}-${order.edgeTargetId}`;
     case 'upgrade_dev':
@@ -98,7 +99,7 @@ export default function BottomBar({
                   onClick={() => onRemoveOrder(idx)}
                   title="Remove order"
                 >
-                  &times;
+                  <GameIcon name="close" size={12} />
                 </button>
               </span>
             );

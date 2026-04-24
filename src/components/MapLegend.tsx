@@ -1,3 +1,5 @@
+import GameIcon from './GameIcon';
+
 export default function MapLegend() {
   return (
     <div className="map-legend">
@@ -5,30 +7,30 @@ export default function MapLegend() {
       <div className="map-legend__section">
         <div className="map-legend__section-label">Province Type</div>
         <div className="map-legend__item">
-          <span className="map-legend__icon">{'\u265B'}</span>
+          <GameIcon name="capital" size={14} className="map-legend__icon" />
           <span>Capital</span>
         </div>
         <div className="map-legend__item">
-          <span className="map-legend__icon">{'\u2605'}</span>
+          <GameIcon name="key-region" size={14} className="map-legend__icon" />
           <span>Key Region</span>
         </div>
         <div className="map-legend__item">
-          <span className="map-legend__icon">{'\u26F5'}</span>
+          <GameIcon name="port" size={14} className="map-legend__icon" />
           <span>Port</span>
         </div>
       </div>
       <div className="map-legend__section">
         <div className="map-legend__section-label">Military</div>
         <div className="map-legend__item">
-          <span className="map-legend__icon">{'\u2694'}</span>
+          <GameIcon name="land-army" size={14} className="map-legend__icon" />
           <span>Land Army</span>
         </div>
         <div className="map-legend__item">
-          <span className="map-legend__icon">{'\u2693'}</span>
+          <GameIcon name="naval-fleet" size={14} className="map-legend__icon" />
           <span>Naval Fleet</span>
         </div>
         <div className="map-legend__item">
-          <span className="map-legend__icon">{'\u{1F6E1}'}</span>
+          <GameIcon name="fortification" size={14} className="map-legend__icon" />
           <span>Fortification</span>
         </div>
       </div>

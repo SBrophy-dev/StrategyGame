@@ -105,3 +105,6 @@ export type {
   GameState,
   GameContext,
 } from './state';
+
+// UI Icons
+export type { GameIconName } from '../components/GameIcon';

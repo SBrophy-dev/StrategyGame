@@ -1,15 +1,17 @@
 import { useState } from 'react';
+import GameIcon from './GameIcon';
+import type { GameIconName } from './GameIcon';
 
 interface HintCategory {
   title: string;
-  icon: string;
+  icon: GameIconName;
   tips: string[];
 }
 
 const HINTS: HintCategory[] = [
   {
     title: 'Unrest & Rebellion',
-    icon: '\u26A0',
+    icon: 'warning',
     tips: [
       'Unrest rises by +2 each turn in provinces without a garrisoned army.',
       'Enemy armies in your province cause +8 unrest per turn — expel them quickly.',
@@ -21,7 +23,7 @@ const HINTS: HintCategory[] = [
   },
   {
     title: 'Diplomacy',
-    icon: '\u{1F91D}',
+    icon: 'diplomacy',
     tips: [
       'Relations drift toward 0 each turn. Actively manage them before they fade.',
       'Trade Deals activate trade routes on shared borders, generating bonus gold from trade value.',
@@ -34,7 +36,7 @@ const HINTS: HintCategory[] = [
   },
   {
     title: 'Economy',
-    icon: '\u2B21',
+    icon: 'gold',
     tips: [
       'Each province produces resources based on its Development Level and Focus.',
       'Armies consume food equal to their total strength each turn. Starving armies are a liability.',
@@ -46,7 +48,7 @@ const HINTS: HintCategory[] = [
   },
   {
     title: 'Province Focus',
-    icon: '\u2692',
+    icon: 'production',
     tips: [
       'Set a Focus at Dev Level 2+ to specialize your provinces.',
       'Agricultural: produces Food (essential for feeding armies).',
@@ -58,7 +60,7 @@ const HINTS: HintCategory[] = [
   },
   {
     title: 'Military',
-    icon: '\u2694',
+    icon: 'manpower',
     tips: [
       'Larger armies generally win, but forts and terrain give the defender an advantage.',
       'Mountain terrain provides the strongest defensive bonus. Forests are also defensible.',
@@ -70,7 +72,7 @@ const HINTS: HintCategory[] = [
   },
   {
     title: 'Action Budget',
-    icon: '\u2734',
+    icon: 'action-budget',
     tips: [
       'You have four action categories per turn: Diplomatic, Military, Construction, and Wildcard.',
       'Plan your actions carefully — budget is limited and unused actions are wasted.',
@@ -82,7 +84,7 @@ const HINTS: HintCategory[] = [
   },
   {
     title: 'Victory',
-    icon: '\u2605',
+    icon: 'victory',
     tips: [
       'Each scenario has its own victory conditions — check them early and plan accordingly.',
       'Control Regions: hold specific provinces for a set number of turns.',
@@ -100,7 +102,7 @@ export default function HintsButton() {
   return (
     <>
       <button className="hints-btn" onClick={() => setOpen(true)} title="Game Hints">
-        {'\u2753'} Hints
+        <GameIcon name="hints" size={14} /> Hints
       </button>
 
       {open && (
@@ -109,7 +111,7 @@ export default function HintsButton() {
             <div className="hints-modal__header">
               <span className="hints-modal__title">Game Hints</span>
               <button className="hints-modal__close" onClick={() => setOpen(false)}>
-                &times;
+                <GameIcon name="close" size={16} />
               </button>
             </div>
 
@@ -121,7 +123,9 @@ export default function HintsButton() {
                     className={`hints-modal__cat-btn${i === activeCategory ? ' hints-modal__cat-btn--active' : ''}`}
                     onClick={() => setActiveCategory(i)}
                   >
-                    <span className="hints-modal__cat-icon">{cat.icon}</span>
+                    <span className="hints-modal__cat-icon">
+                      <GameIcon name={cat.icon} size={14} />
+                    </span>
                     <span className="hints-modal__cat-label">{cat.title}</span>
                   </button>
                 ))}
@@ -129,7 +133,7 @@ export default function HintsButton() {
 
               <div className="hints-modal__tips">
                 <div className="hints-modal__tips-title">
-                  {HINTS[activeCategory].icon} {HINTS[activeCategory].title}
+                  <GameIcon name={HINTS[activeCategory].icon} size={16} /> {HINTS[activeCategory].title}
                 </div>
                 <ul className="hints-modal__tips-list">
                   {HINTS[activeCategory].tips.map((tip, i) => (

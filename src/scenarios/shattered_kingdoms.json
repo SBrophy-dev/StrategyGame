@@ -40,32 +40,32 @@
         "population": "Thriving",
         "strategicTag": "KeyRegion",
         "layout": {
-          "x": 503,
-          "y": 297,
+          "x": 33,
+          "y": 39,
           "polygon": [
             [
-              478,
-              267
+              54,
+              27
             ],
             [
-              528,
-              267
+              54,
+              51
             ],
             [
-              543,
-              297
+              33,
+              63
             ],
             [
-              528,
-              327
+              12,
+              51
             ],
             [
-              478,
-              327
+              12,
+              27
             ],
             [
-              463,
-              297
+              33,
+              15
             ]
           ]
         }
@@ -82,32 +82,32 @@
         "population": "High",
         "strategicTag": "Capital",
         "layout": {
-          "x": 179,
-          "y": 81,
+          "x": 363,
+          "y": 408,
           "polygon": [
             [
-              149,
-              51
+              384,
+              396
             ],
             [
-              209,
-              51
+              384,
+              420
             ],
             [
-              224,
-              81
+              363,
+              432
             ],
             [
-              209,
-              111
+              342,
+              420
             ],
             [
-              149,
-              111
+              342,
+              396
             ],
             [
-              134,
-              81
+              363,
+              384
             ]
           ]
         }
@@ -124,32 +124,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 265,
-          "y": 124,
+          "x": 156,
+          "y": 240,
           "polygon": [
             [
-              235,
-              94
+              177,
+              228
             ],
             [
-              295,
-              94
+              177,
+              252
             ],
             [
-              310,
-              124
+              156,
+              264
             ],
             [
-              295,
-              154
+              135,
+              252
             ],
             [
-              235,
-              154
+              135,
+              228
             ],
             [
-              220,
-              124
+              156,
+              216
             ]
           ]
         }
@@ -166,32 +166,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 136,
-          "y": 167,
+          "x": 753,
+          "y": 90,
           "polygon": [
             [
-              106,
-              137
+              774,
+              78
             ],
             [
-              166,
-              137
+              774,
+              102
             ],
             [
-              181,
-              167
+              753,
+              114
             ],
             [
-              166,
-              197
+              732,
+              102
             ],
             [
-              106,
-              197
+              732,
+              78
             ],
             [
-              91,
-              167
+              753,
+              66
             ]
           ]
         }
@@ -200,7 +200,7 @@
         "id": "p05",
         "name": "Greymoor",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Plains",
         "devLevel": 1,
         "focus": null,
         "unrest": 0,
@@ -208,32 +208,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 71,
-          "y": 254,
+          "x": 468,
+          "y": 483,
           "polygon": [
             [
-              41,
-              224
+              489,
+              471
             ],
             [
-              101,
-              224
+              489,
+              495
             ],
             [
-              116,
-              254
+              468,
+              507
             ],
             [
-              101,
-              284
+              447,
+              495
             ],
             [
-              41,
-              284
+              447,
+              471
             ],
             [
-              26,
-              254
+              468,
+              459
             ]
           ]
         }
@@ -250,32 +250,32 @@
         "population": "High",
         "strategicTag": "Capital",
         "layout": {
-          "x": 341,
-          "y": 59,
+          "x": 900,
+          "y": 450,
           "polygon": [
             [
-              311,
-              29
+              921,
+              438
             ],
             [
-              371,
-              29
+              921,
+              462
             ],
             [
-              386,
-              59
+              900,
+              474
             ],
             [
-              371,
-              89
+              879,
+              462
             ],
             [
-              311,
-              89
+              879,
+              438
             ],
             [
-              296,
-              59
+              900,
+              426
             ]
           ]
         }
@@ -292,32 +292,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 416,
-          "y": 113,
+          "x": 258,
+          "y": 195,
           "polygon": [
             [
-              386,
-              83
+              279,
+              183
             ],
             [
-              446,
-              83
+              279,
+              207
             ],
             [
-              461,
-              113
+              258,
+              219
             ],
             [
-              446,
-              143
+              237,
+              207
             ],
             [
-              386,
-              143
+              237,
+              183
             ],
             [
-              371,
-              113
+              258,
+              171
             ]
           ]
         }
@@ -326,7 +326,7 @@
         "id": "p08",
         "name": "Silverrun",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Commercial",
         "unrest": 0,
@@ -334,32 +334,32 @@
         "population": "Medium",
         "strategicTag": "Port",
         "layout": {
-          "x": 481,
-          "y": 59,
+          "x": 462,
+          "y": 282,
           "polygon": [
             [
-              451,
-              29
+              483,
+              270
             ],
             [
-              511,
-              29
+              483,
+              294
             ],
             [
-              526,
-              59
+              462,
+              306
             ],
             [
-              511,
-              89
+              441,
+              294
             ],
             [
-              451,
-              89
+              441,
+              270
             ],
             [
-              436,
-              59
+              462,
+              258
             ]
           ]
         }
@@ -368,7 +368,7 @@
         "id": "p09",
         "name": "Drakenhold",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Plains",
         "devLevel": 3,
         "focus": "Military",
         "unrest": 0,
@@ -376,32 +376,32 @@
         "population": "Medium",
         "strategicTag": "Capital",
         "layout": {
-          "x": 632,
-          "y": 102,
+          "x": 312,
+          "y": 366,
           "polygon": [
             [
-              602,
-              72
+              333,
+              354
             ],
             [
-              662,
-              72
+              333,
+              378
             ],
             [
-              677,
-              102
+              312,
+              390
             ],
             [
-              662,
-              132
+              291,
+              378
             ],
             [
-              602,
-              132
+              291,
+              354
             ],
             [
-              587,
-              102
+              312,
+              342
             ]
           ]
         }
@@ -410,7 +410,7 @@
         "id": "p10",
         "name": "Ashen Pass",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Military",
         "unrest": 0,
@@ -418,32 +418,32 @@
         "population": "Low",
         "strategicTag": "KeyRegion",
         "layout": {
-          "x": 568,
-          "y": 189,
+          "x": 441,
+          "y": 435,
           "polygon": [
             [
-              538,
-              159
+              462,
+              423
             ],
             [
-              598,
-              159
+              462,
+              447
             ],
             [
-              613,
-              189
+              441,
+              459
             ],
             [
-              598,
-              219
+              420,
+              447
             ],
             [
-              538,
-              219
+              420,
+              423
             ],
             [
-              523,
-              189
+              441,
+              411
             ]
           ]
         }
@@ -452,7 +452,7 @@
         "id": "p11",
         "name": "Embervale",
         "ownerId": null,
-        "terrain": "Desert",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Industrial",
         "unrest": 0,
@@ -460,32 +460,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 719,
-          "y": 189,
+          "x": 519,
+          "y": 429,
           "polygon": [
             [
-              689,
-              159
+              540,
+              417
             ],
             [
-              749,
-              159
+              540,
+              441
             ],
             [
-              764,
-              189
+              519,
+              453
             ],
             [
-              749,
-              219
+              498,
+              441
             ],
             [
-              689,
-              219
+              498,
+              417
             ],
             [
-              674,
-              189
+              519,
+              405
             ]
           ]
         }
@@ -494,7 +494,7 @@
         "id": "p12",
         "name": "Sunhaven",
         "ownerId": null,
-        "terrain": "Desert",
+        "terrain": "Plains",
         "devLevel": 3,
         "focus": "Commercial",
         "unrest": 0,
@@ -502,32 +502,32 @@
         "population": "High",
         "strategicTag": "Capital",
         "layout": {
-          "x": 805,
-          "y": 135,
+          "x": 369,
+          "y": 330,
           "polygon": [
             [
-              775,
-              105
+              390,
+              318
             ],
             [
-              835,
-              105
+              390,
+              342
             ],
             [
-              850,
-              135
+              369,
+              354
             ],
             [
-              835,
-              165
+              348,
+              342
             ],
             [
-              775,
-              165
+              348,
+              318
             ],
             [
-              760,
-              135
+              369,
+              306
             ]
           ]
         }
@@ -536,7 +536,7 @@
         "id": "p13",
         "name": "Dunewatch",
         "ownerId": null,
-        "terrain": "Desert",
+        "terrain": "Plains",
         "devLevel": 1,
         "focus": null,
         "unrest": 0,
@@ -544,32 +544,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 848,
-          "y": 232,
+          "x": 477,
+          "y": 363,
           "polygon": [
             [
-              818,
-              202
+              498,
+              351
             ],
             [
-              878,
-              202
+              498,
+              375
             ],
             [
-              893,
-              232
+              477,
+              387
             ],
             [
-              878,
-              262
+              456,
+              375
             ],
             [
-              818,
-              262
+              456,
+              351
             ],
             [
-              803,
-              232
+              477,
+              339
             ]
           ]
         }
@@ -578,7 +578,7 @@
         "id": "p14",
         "name": "Tidemarch",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Plains",
         "devLevel": 3,
         "focus": "Commercial",
         "unrest": 0,
@@ -586,32 +586,32 @@
         "population": "High",
         "strategicTag": "Capital",
         "layout": {
-          "x": 71,
-          "y": 383,
+          "x": 510,
+          "y": 315,
           "polygon": [
             [
-              41,
-              353
+              531,
+              303
             ],
             [
-              101,
-              353
+              531,
+              327
             ],
             [
-              116,
-              383
+              510,
+              339
             ],
             [
-              101,
-              413
+              489,
+              327
             ],
             [
-              41,
-              413
+              489,
+              303
             ],
             [
-              26,
-              383
+              510,
+              291
             ]
           ]
         }
@@ -620,7 +620,7 @@
         "id": "p15",
         "name": "Saltshore",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Agricultural",
         "unrest": 0,
@@ -628,32 +628,32 @@
         "population": "Medium",
         "strategicTag": "Port",
         "layout": {
-          "x": 17,
-          "y": 459,
+          "x": 159,
+          "y": 117,
           "polygon": [
             [
-              -13,
-              429
+              180,
+              105
             ],
             [
-              47,
-              429
+              180,
+              129
             ],
             [
-              62,
-              459
+              159,
+              141
             ],
             [
-              47,
-              489
+              138,
+              129
             ],
             [
-              -13,
-              489
+              138,
+              105
             ],
             [
-              -28,
-              459
+              159,
+              93
             ]
           ]
         }
@@ -662,7 +662,7 @@
         "id": "p16",
         "name": "Mistwood",
         "ownerId": null,
-        "terrain": "Forest",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Agricultural",
         "unrest": 0,
@@ -670,32 +670,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 179,
-          "y": 318,
+          "x": 783,
+          "y": 540,
           "polygon": [
             [
-              149,
-              288
+              804,
+              528
             ],
             [
-              209,
-              288
+              804,
+              552
             ],
             [
-              224,
-              318
+              783,
+              564
             ],
             [
-              209,
-              348
+              762,
+              552
             ],
             [
-              149,
-              348
+              762,
+              528
             ],
             [
-              134,
-              318
+              783,
+              516
             ]
           ]
         }
@@ -704,7 +704,7 @@
         "id": "p17",
         "name": "Iron Ridge",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Plains",
         "devLevel": 3,
         "focus": "Industrial",
         "unrest": 0,
@@ -712,32 +712,32 @@
         "population": "Medium",
         "strategicTag": "Capital",
         "layout": {
-          "x": 287,
-          "y": 254,
+          "x": 321,
+          "y": 294,
           "polygon": [
             [
-              257,
-              224
+              342,
+              282
             ],
             [
-              317,
-              224
+              342,
+              306
             ],
             [
-              332,
-              254
+              321,
+              318
             ],
             [
-              317,
-              284
+              300,
+              306
             ],
             [
-              257,
-              284
+              300,
+              282
             ],
             [
-              242,
-              254
+              321,
+              270
             ]
           ]
         }
@@ -746,7 +746,7 @@
         "id": "p18",
         "name": "Stonehearth",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Industrial",
         "unrest": 0,
@@ -754,32 +754,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 233,
-          "y": 405,
+          "x": 771,
+          "y": 483,
           "polygon": [
             [
-              203,
-              375
+              792,
+              471
             ],
             [
-              263,
-              375
+              792,
+              495
             ],
             [
-              278,
-              405
+              771,
+              507
             ],
             [
-              263,
-              435
+              750,
+              495
             ],
             [
-              203,
-              435
+              750,
+              471
             ],
             [
-              188,
-              405
+              771,
+              459
             ]
           ]
         }
@@ -796,32 +796,32 @@
         "population": "High",
         "strategicTag": null,
         "layout": {
-          "x": 395,
-          "y": 243,
+          "x": 189,
+          "y": 66,
           "polygon": [
             [
-              365,
-              213
+              210,
+              54
             ],
             [
-              425,
-              213
+              210,
+              78
             ],
             [
-              440,
-              243
+              189,
+              90
             ],
             [
-              425,
-              273
+              168,
+              78
             ],
             [
-              365,
-              273
+              168,
+              54
             ],
             [
-              350,
-              243
+              189,
+              42
             ]
           ]
         }
@@ -838,32 +838,32 @@
         "population": "Thriving",
         "strategicTag": "KeyRegion",
         "layout": {
-          "x": 395,
-          "y": 372,
+          "x": 204,
+          "y": 174,
           "polygon": [
             [
-              365,
-              342
+              225,
+              162
             ],
             [
-              425,
-              342
+              225,
+              186
             ],
             [
-              440,
-              372
+              204,
+              198
             ],
             [
-              425,
-              402
+              183,
+              186
             ],
             [
-              365,
-              402
+              183,
+              162
             ],
             [
-              350,
-              372
+              204,
+              150
             ]
           ]
         }
@@ -880,32 +880,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 330,
-          "y": 448,
+          "x": 96,
+          "y": 99,
           "polygon": [
             [
-              300,
-              418
+              117,
+              87
             ],
             [
-              360,
-              418
+              117,
+              111
             ],
             [
-              375,
-              448
+              96,
+              123
             ],
             [
-              360,
-              478
+              75,
+              111
             ],
             [
-              300,
-              478
+              75,
+              87
             ],
             [
-              285,
-              448
+              96,
+              75
             ]
           ]
         }
@@ -914,7 +914,7 @@
         "id": "p22",
         "name": "Ravensgate",
         "ownerId": null,
-        "terrain": "Forest",
+        "terrain": "Plains",
         "devLevel": 3,
         "focus": "Military",
         "unrest": 0,
@@ -922,32 +922,32 @@
         "population": "Medium",
         "strategicTag": "Capital",
         "layout": {
-          "x": 503,
-          "y": 448,
+          "x": 390,
+          "y": 465,
           "polygon": [
             [
-              473,
-              418
+              411,
+              453
             ],
             [
-              533,
-              418
+              411,
+              477
             ],
             [
-              548,
-              448
+              390,
+              489
             ],
             [
-              533,
-              478
+              369,
+              477
             ],
             [
-              473,
-              478
+              369,
+              453
             ],
             [
-              458,
-              448
+              390,
+              441
             ]
           ]
         }
@@ -956,7 +956,7 @@
         "id": "p23",
         "name": "Duskhollow",
         "ownerId": null,
-        "terrain": "Forest",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Agricultural",
         "unrest": 0,
@@ -964,32 +964,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 438,
-          "y": 524,
+          "x": 411,
+          "y": 366,
           "polygon": [
             [
-              408,
-              494
+              432,
+              354
             ],
             [
-              468,
-              494
+              432,
+              378
             ],
             [
-              483,
-              524
+              411,
+              390
             ],
             [
-              468,
-              554
+              390,
+              378
             ],
             [
-              408,
-              554
+              390,
+              354
             ],
             [
-              393,
-              524
+              411,
+              342
             ]
           ]
         }
@@ -998,7 +998,7 @@
         "id": "p24",
         "name": "Cinder Wastes",
         "ownerId": null,
-        "terrain": "Desert",
+        "terrain": "Plains",
         "devLevel": 1,
         "focus": null,
         "unrest": 10,
@@ -1006,32 +1006,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 632,
-          "y": 318,
+          "x": 870,
+          "y": 528,
           "polygon": [
             [
-              602,
-              288
+              891,
+              516
             ],
             [
-              662,
-              288
+              891,
+              540
             ],
             [
-              677,
-              318
+              870,
+              552
             ],
             [
-              662,
-              348
+              849,
+              540
             ],
             [
-              602,
-              348
+              849,
+              516
             ],
             [
-              587,
-              318
+              870,
+              504
             ]
           ]
         }
@@ -1040,7 +1040,7 @@
         "id": "p25",
         "name": "Blackspire",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Plains",
         "devLevel": 3,
         "focus": "Military",
         "unrest": 0,
@@ -1048,32 +1048,32 @@
         "population": "Medium",
         "strategicTag": "Capital",
         "layout": {
-          "x": 719,
-          "y": 383,
+          "x": 540,
+          "y": 375,
           "polygon": [
             [
-              689,
-              353
+              561,
+              363
             ],
             [
-              749,
-              353
+              561,
+              387
             ],
             [
-              764,
-              383
+              540,
+              399
             ],
             [
-              749,
-              413
+              519,
+              387
             ],
             [
-              689,
-              413
+              519,
+              363
             ],
             [
-              674,
-              383
+              540,
+              351
             ]
           ]
         }
@@ -1082,7 +1082,7 @@
         "id": "p26",
         "name": "Wraithfen",
         "ownerId": null,
-        "terrain": "Forest",
+        "terrain": "Plains",
         "devLevel": 1,
         "focus": null,
         "unrest": 15,
@@ -1090,32 +1090,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 784,
-          "y": 308,
+          "x": 273,
+          "y": 36,
           "polygon": [
             [
-              754,
-              278
+              294,
+              24
             ],
             [
-              814,
-              278
+              294,
+              48
             ],
             [
-              829,
-              308
+              273,
+              60
             ],
             [
-              814,
-              338
+              252,
+              48
             ],
             [
-              754,
-              338
+              252,
+              24
             ],
             [
-              739,
-              308
+              273,
+              12
             ]
           ]
         }
@@ -1124,7 +1124,7 @@
         "id": "p27",
         "name": "Oakheart",
         "ownerId": null,
-        "terrain": "Forest",
+        "terrain": "Plains",
         "devLevel": 2,
         "focus": "Agricultural",
         "unrest": 0,
@@ -1132,32 +1132,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 611,
-          "y": 448,
+          "x": 225,
+          "y": 123,
           "polygon": [
             [
-              581,
-              418
+              246,
+              111
             ],
             [
-              641,
-              418
+              246,
+              135
             ],
             [
-              656,
-              448
+              225,
+              147
             ],
             [
-              641,
-              478
+              204,
+              135
             ],
             [
-              581,
-              478
+              204,
+              111
             ],
             [
-              566,
-              448
+              225,
+              99
             ]
           ]
         }
@@ -1166,7 +1166,7 @@
         "id": "p28",
         "name": "Stormwatch",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Plains",
         "devLevel": 3,
         "focus": "Military",
         "unrest": 0,
@@ -1174,32 +1174,32 @@
         "population": "Medium",
         "strategicTag": "Capital",
         "layout": {
-          "x": 827,
-          "y": 459,
+          "x": 378,
+          "y": 264,
           "polygon": [
             [
-              797,
-              429
+              399,
+              252
             ],
             [
-              857,
-              429
+              399,
+              276
             ],
             [
-              872,
-              459
+              378,
+              288
             ],
             [
-              857,
-              489
+              357,
+              276
             ],
             [
-              797,
-              489
+              357,
+              252
             ],
             [
-              782,
-              459
+              378,
+              240
             ]
           ]
         }
@@ -1208,7 +1208,7 @@
         "id": "p29",
         "name": "Tidecaller Bay",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Desert",
         "devLevel": 2,
         "focus": "Commercial",
         "unrest": 0,
@@ -1216,32 +1216,32 @@
         "population": "Medium",
         "strategicTag": "Port",
         "layout": {
-          "x": 892,
-          "y": 383,
+          "x": 819,
+          "y": 456,
           "polygon": [
             [
-              862,
-              353
+              840,
+              444
             ],
             [
-              922,
-              353
+              840,
+              468
             ],
             [
-              937,
-              383
+              819,
+              480
             ],
             [
-              922,
-              413
+              798,
+              468
             ],
             [
-              862,
-              413
+              798,
+              444
             ],
             [
-              847,
-              383
+              819,
+              432
             ]
           ]
         }
@@ -1250,7 +1250,7 @@
         "id": "p30",
         "name": "Hearthstone",
         "ownerId": null,
-        "terrain": "Plains",
+        "terrain": "Mountain",
         "devLevel": 4,
         "focus": "Agricultural",
         "unrest": 0,
@@ -1258,32 +1258,32 @@
         "population": "Thriving",
         "strategicTag": "KeyRegion",
         "layout": {
-          "x": 287,
-          "y": 556,
+          "x": 834,
+          "y": 609,
           "polygon": [
             [
-              257,
-              526
+              855,
+              597
             ],
             [
-              317,
-              526
+              855,
+              621
             ],
             [
-              332,
-              556
+              834,
+              633
             ],
             [
-              317,
-              586
+              813,
+              621
             ],
             [
-              257,
-              586
+              813,
+              597
             ],
             [
-              242,
-              556
+              834,
+              585
             ]
           ]
         }
@@ -1292,7 +1292,7 @@
         "id": "p31",
         "name": "Ferndale",
         "ownerId": null,
-        "terrain": "Forest",
+        "terrain": "Desert",
         "devLevel": 2,
         "focus": "Agricultural",
         "unrest": 0,
@@ -1300,32 +1300,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 179,
-          "y": 513,
+          "x": 273,
+          "y": 93,
           "polygon": [
             [
-              149,
-              483
+              294,
+              81
             ],
             [
-              209,
-              483
+              294,
+              105
             ],
             [
-              224,
-              513
+              273,
+              117
             ],
             [
-              209,
-              543
+              252,
+              105
             ],
             [
-              149,
-              543
+              252,
+              81
             ],
             [
-              134,
-              513
+              273,
+              69
             ]
           ]
         }
@@ -1334,7 +1334,7 @@
         "id": "p32",
         "name": "Windholme",
         "ownerId": null,
-        "terrain": "Plains",
+        "terrain": "Desert",
         "devLevel": 3,
         "focus": "Agricultural",
         "unrest": 0,
@@ -1342,32 +1342,32 @@
         "population": "High",
         "strategicTag": "Capital",
         "layout": {
-          "x": 125,
-          "y": 599,
+          "x": 852,
+          "y": 399,
           "polygon": [
             [
-              95,
-              569
+              873,
+              387
             ],
             [
-              155,
-              569
+              873,
+              411
             ],
             [
-              170,
-              599
+              852,
+              423
             ],
             [
-              155,
-              629
+              831,
+              411
             ],
             [
-              95,
-              629
+              831,
+              387
             ],
             [
-              80,
-              599
+              852,
+              375
             ]
           ]
         }
@@ -1384,32 +1384,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 49,
-          "y": 545,
+          "x": 123,
+          "y": 189,
           "polygon": [
             [
-              19,
-              515
+              144,
+              177
             ],
             [
-              79,
-              515
+              144,
+              201
             ],
             [
-              94,
-              545
+              123,
+              213
             ],
             [
-              79,
-              575
+              102,
+              201
             ],
             [
-              19,
-              575
+              102,
+              177
             ],
             [
-              4,
-              545
+              123,
+              165
             ]
           ]
         }
@@ -1418,7 +1418,7 @@
         "id": "p34",
         "name": "Frostpeak",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Military",
         "unrest": 0,
@@ -1426,32 +1426,32 @@
         "population": "Low",
         "strategicTag": "Capital",
         "layout": {
-          "x": 503,
-          "y": 578,
+          "x": 105,
+          "y": 30,
           "polygon": [
             [
-              473,
-              548
+              126,
+              18
             ],
             [
-              533,
-              548
+              126,
+              42
             ],
             [
-              548,
-              578
+              105,
+              54
             ],
             [
-              533,
-              608
+              84,
+              42
             ],
             [
-              473,
-              608
+              84,
+              18
             ],
             [
-              458,
-              578
+              105,
+              6
             ]
           ]
         }
@@ -1460,7 +1460,7 @@
         "id": "p35",
         "name": "Icevein",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Forest",
         "devLevel": 1,
         "focus": null,
         "unrest": 0,
@@ -1468,32 +1468,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 568,
-          "y": 534,
+          "x": 81,
+          "y": 243,
           "polygon": [
             [
-              538,
-              504
+              102,
+              231
             ],
             [
-              598,
-              504
+              102,
+              255
             ],
             [
-              613,
-              534
+              81,
+              267
             ],
             [
-              598,
-              564
+              60,
+              255
             ],
             [
-              538,
-              564
+              60,
+              231
             ],
             [
-              523,
-              534
+              81,
+              219
             ]
           ]
         }
@@ -1502,7 +1502,7 @@
         "id": "p36",
         "name": "Havenport",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Forest",
         "devLevel": 3,
         "focus": "Commercial",
         "unrest": 0,
@@ -1510,32 +1510,32 @@
         "population": "High",
         "strategicTag": "Port",
         "layout": {
-          "x": 665,
-          "y": 556,
+          "x": 39,
+          "y": 306,
           "polygon": [
             [
-              635,
-              526
+              60,
+              294
             ],
             [
-              695,
-              526
+              60,
+              318
             ],
             [
-              710,
-              556
+              39,
+              330
             ],
             [
-              695,
-              586
+              18,
+              318
             ],
             [
-              635,
-              586
+              18,
+              294
             ],
             [
-              620,
-              556
+              39,
+              282
             ]
           ]
         }
@@ -1544,7 +1544,7 @@
         "id": "p37",
         "name": "Ashfall",
         "ownerId": null,
-        "terrain": "Desert",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Industrial",
         "unrest": 5,
@@ -1552,32 +1552,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 762,
-          "y": 513,
+          "x": 36,
+          "y": 153,
           "polygon": [
             [
-              732,
-              483
+              57,
+              141
             ],
             [
-              792,
-              483
+              57,
+              165
             ],
             [
-              807,
-              513
+              36,
+              177
             ],
             [
-              792,
-              543
+              15,
+              165
             ],
             [
-              732,
-              543
+              15,
+              141
             ],
             [
-              717,
-              513
+              36,
+              129
             ]
           ]
         }
@@ -1586,7 +1586,7 @@
         "id": "p38",
         "name": "Copperdale",
         "ownerId": null,
-        "terrain": "Plains",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Industrial",
         "unrest": 0,
@@ -1594,32 +1594,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 341,
-          "y": 156,
+          "x": 141,
+          "y": 297,
           "polygon": [
             [
-              311,
-              126
+              162,
+              285
             ],
             [
-              371,
-              126
+              162,
+              309
             ],
             [
-              386,
-              156
+              141,
+              321
             ],
             [
-              371,
-              186
+              120,
+              309
             ],
             [
-              311,
-              186
+              120,
+              285
             ],
             [
-              296,
-              156
+              141,
+              273
             ]
           ]
         }
@@ -1628,7 +1628,7 @@
         "id": "p39",
         "name": "Moonrise",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Commercial",
         "unrest": 0,
@@ -1636,32 +1636,32 @@
         "population": "Medium",
         "strategicTag": "Port",
         "layout": {
-          "x": 935,
-          "y": 297,
+          "x": 726,
+          "y": 192,
           "polygon": [
             [
-              905,
-              267
+              747,
+              180
             ],
             [
-              965,
-              267
+              747,
+              204
             ],
             [
-              980,
-              297
+              726,
+              216
             ],
             [
-              965,
-              327
+              705,
+              204
             ],
             [
-              905,
-              327
+              705,
+              180
             ],
             [
-              890,
-              297
+              726,
+              168
             ]
           ]
         }
@@ -1670,7 +1670,7 @@
         "id": "p40",
         "name": "Crownspire",
         "ownerId": null,
-        "terrain": "Plains",
+        "terrain": "Forest",
         "devLevel": 4,
         "focus": "Military",
         "unrest": 0,
@@ -1678,32 +1678,32 @@
         "population": "Thriving",
         "strategicTag": "KeyRegion",
         "layout": {
-          "x": 503,
-          "y": 167,
+          "x": 774,
+          "y": 162,
           "polygon": [
             [
-              473,
-              137
+              795,
+              150
             ],
             [
-              533,
-              137
+              795,
+              174
             ],
             [
-              548,
-              167
+              774,
+              186
             ],
             [
-              533,
-              197
+              753,
+              174
             ],
             [
-              473,
-              197
+              753,
+              150
             ],
             [
-              458,
-              167
+              774,
+              138
             ]
           ]
         }
@@ -1712,7 +1712,7 @@
         "id": "p41",
         "name": "Willowmere",
         "ownerId": null,
-        "terrain": "Plains",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Agricultural",
         "unrest": 0,
@@ -1720,32 +1720,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 125,
-          "y": 459,
+          "x": 681,
+          "y": 141,
           "polygon": [
             [
-              95,
-              429
+              702,
+              129
             ],
             [
-              155,
-              429
+              702,
+              153
             ],
             [
-              170,
-              459
+              681,
+              165
             ],
             [
-              155,
-              489
+              660,
+              153
             ],
             [
-              95,
-              489
+              660,
+              129
             ],
             [
-              80,
-              459
+              681,
+              117
             ]
           ]
         }
@@ -1754,7 +1754,7 @@
         "id": "p42",
         "name": "Redcliff",
         "ownerId": null,
-        "terrain": "Mountain",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Military",
         "unrest": 0,
@@ -1762,32 +1762,32 @@
         "population": "Low",
         "strategicTag": null,
         "layout": {
-          "x": 697,
-          "y": 275,
+          "x": 222,
+          "y": 243,
           "polygon": [
             [
-              667,
-              245
+              243,
+              231
             ],
             [
-              727,
-              245
+              243,
+              255
             ],
             [
-              742,
-              275
+              222,
+              267
             ],
             [
-              727,
-              305
+              201,
+              255
             ],
             [
-              667,
-              305
+              201,
+              231
             ],
             [
-              652,
-              275
+              222,
+              219
             ]
           ]
         }
@@ -1796,7 +1796,7 @@
         "id": "p43",
         "name": "Lakeholm",
         "ownerId": null,
-        "terrain": "Plains",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Agricultural",
         "unrest": 0,
@@ -1804,32 +1804,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 395,
-          "y": 491,
+          "x": 693,
+          "y": 72,
           "polygon": [
             [
-              365,
-              461
+              714,
+              60
             ],
             [
-              425,
-              461
+              714,
+              84
             ],
             [
-              440,
-              491
+              693,
+              96
             ],
             [
-              425,
-              521
+              672,
+              84
             ],
             [
-              365,
-              521
+              672,
+              60
             ],
             [
-              350,
-              491
+              693,
+              48
             ]
           ]
         }
@@ -1838,7 +1838,7 @@
         "id": "p44",
         "name": "Seabreeze",
         "ownerId": null,
-        "terrain": "Coastal",
+        "terrain": "Forest",
         "devLevel": 2,
         "focus": "Commercial",
         "unrest": 0,
@@ -1846,32 +1846,32 @@
         "population": "Medium",
         "strategicTag": "Port",
         "layout": {
-          "x": 881,
-          "y": 534,
+          "x": 837,
+          "y": 135,
           "polygon": [
             [
-              851,
-              504
+              858,
+              123
             ],
             [
-              911,
-              504
+              858,
+              147
             ],
             [
-              926,
-              534
+              837,
+              159
             ],
             [
-              911,
-              564
+              816,
+              147
             ],
             [
-              851,
-              564
+              816,
+              123
             ],
             [
-              836,
-              534
+              837,
+              111
             ]
           ]
         }
@@ -1888,32 +1888,32 @@
         "population": "Medium",
         "strategicTag": null,
         "layout": {
-          "x": 589,
-          "y": 383,
+          "x": 804,
+          "y": 63,
           "polygon": [
             [
-              559,
-              353
+              825,
+              51
             ],
             [
-              619,
-              353
+              825,
+              75
             ],
             [
-              634,
-              383
+              804,
+              87
             ],
             [
-              619,
-              413
+              783,
+              75
             ],
             [
-              559,
-              413
+              783,
+              51
             ],
             [
-              544,
-              383
+              804,
+              39
             ]
           ]
         }

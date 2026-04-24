@@ -6,17 +6,37 @@ interface NationSelectScreenProps {
   gameState: GameState;
   onConfirm: (nationId: string) => void;
   onBack: () => void;
+  onRegenerateMap: (islandCount: number) => Promise<void>;
+  mapBust: number;
+  mapImage: string | null;
 }
 
 export default function NationSelectScreen({
   gameState,
   onConfirm,
   onBack,
+  onRegenerateMap,
+  mapBust,
+  mapImage,
 }: NationSelectScreenProps) {
   const [hoveredNationId, setHoveredNationId] = useState<string | null>(null);
   const [selectedNationId, setSelectedNationId] = useState<string | null>(null);
+  const [regenerating, setRegenerating] = useState(false);
+  const [islandCount, setIslandCount] = useState(6);
 
   const highlightedNationId = hoveredNationId ?? selectedNationId ?? null;
+
+  const handleRegenerate = async () => {
+    setRegenerating(true);
+    try {
+      await onRegenerateMap(islandCount);
+      setSelectedNationId(null);
+    } catch {
+      // regeneration failed — silently handled
+    } finally {
+      setRegenerating(false);
+    }
+  };
 
   return (
     <div className="nation-select">
@@ -70,9 +90,38 @@ export default function NationSelectScreen({
         </div>
 
         <div className="nation-select__footer">
-          <button className="nation-select__back" onClick={onBack}>
-            Back
-          </button>
+          <div className="nation-select__footer-left">
+            <button className="nation-select__back" onClick={onBack}>
+              Back
+            </button>
+            <div className="nation-select__island-ctrl">
+              <label className="nation-select__island-label">Islands</label>
+              <div className="nation-select__island-row">
+                <button
+                  className="nation-select__island-btn"
+                  onClick={() => setIslandCount(Math.max(2, islandCount - 1))}
+                  disabled={islandCount <= 2}
+                >
+                  −
+                </button>
+                <span className="nation-select__island-val">{islandCount}</span>
+                <button
+                  className="nation-select__island-btn"
+                  onClick={() => setIslandCount(Math.min(10, islandCount + 1))}
+                  disabled={islandCount >= 10}
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <button
+              className="nation-select__regen"
+              onClick={handleRegenerate}
+              disabled={regenerating}
+            >
+              {regenerating ? 'Generating…' : '⟳ Generate'}
+            </button>
+          </div>
           <button
             className="nation-select__confirm"
             disabled={selectedNationId === null}
@@ -93,6 +142,8 @@ export default function NationSelectScreen({
           armies={gameState.armies}
           selectedProvinceId={null}
           highlightedNationId={highlightedNationId}
+          mapBust={mapBust}
+          mapImage={mapImage}
         />
       </div>
     </div>

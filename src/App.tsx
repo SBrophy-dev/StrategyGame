@@ -6,9 +6,11 @@ import BottomBar from './components/BottomBar.tsx';
 import RightPanel from './components/RightPanel.tsx';
 import MapLegend from './components/MapLegend.tsx';
 import HintsButton from './components/HintsButton.tsx';
+import SuggestionsButton from './components/SuggestionsButton.tsx';
 import NationOverviewHUD from './components/NationOverviewHUD.tsx';
 import NationSelectScreen from './components/NationSelectScreen.tsx';
 import TurnSummaryModal from './components/TurnSummaryModal.tsx';
+import Logo from './components/Logo.tsx';
 import type { GameState, GameEvent } from './types';
 import { validateScenario } from './validateScenario';
 import { initializeGameState } from './initGame';
@@ -137,21 +139,35 @@ function GameScreen({ initialState, eventLibrary, playerNationId, onExitToTitle 
       />
 
       <div className={`map-area${mapTransitioning ? ' map-area--transitioning' : ''}`}>
-        <Map
-          provinces={gameState.provinces}
-          edges={gameState.edges}
-          nations={gameState.nations}
-          armies={gameState.armies}
-          selectedProvinceId={selectedProvinceId}
-          onProvinceClick={setSelectedProvinceId}
-          recentCaptureIds={recentCaptureIds}
-          recentLossIds={recentLossIds}
-          recentBattleIds={recentBattleIds}
-        />
+        <div className="map-frame">
+          <div className="map-frame__corner map-frame__corner--tl" />
+          <div className="map-frame__corner map-frame__corner--tr" />
+          <div className="map-frame__corner map-frame__corner--br" />
+          <div className="map-frame__corner map-frame__corner--bl" />
+          <div className="map-frame__surface">
+            <Map
+              provinces={gameState.provinces}
+              edges={gameState.edges}
+              nations={gameState.nations}
+              armies={gameState.armies}
+              selectedProvinceId={selectedProvinceId}
+              onProvinceClick={setSelectedProvinceId}
+              recentCaptureIds={recentCaptureIds}
+              recentLossIds={recentLossIds}
+              recentBattleIds={recentBattleIds}
+            />
+          </div>
+        </div>
 
         <MapLegend />
 
         <HintsButton />
+
+        <SuggestionsButton
+          gameState={gameState}
+          playerNationId={playerNationId}
+          budget={budget}
+        />
 
         {selectedProvince && (
           <RightPanel
@@ -210,9 +226,102 @@ interface TitleScreenProps {
 function TitleScreen({ onStartNew, onContinue, hasSavedGame }: TitleScreenProps) {
   return (
     <div className="title-screen">
+      {/* Animated particle background */}
+      <div className="title-screen__particles">
+        {Array.from({ length: 60 }, (_, i) => (
+          <div
+            key={i}
+            className="title-screen__particle"
+            style={{
+              left: `${(i * 13 + 5) % 100}%`,
+              top: `${(i * 11 + 3) % 100}%`,
+              animationDelay: `${(i * 0.5) % 6}s`,
+              animationDuration: `${6 + (i * 0.7) % 8}s`,
+              opacity: 0.1 + ((i * 5) % 8) * 0.02,
+              width: `${1.5 + (i % 3)}px`,
+              height: `${1.5 + (i % 3)}px`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Illustrated landscape silhouette banner */}
+      <svg className="title-screen__banner" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="banner-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="rgba(14,21,34,0)" />
+            <stop offset="40%" stopColor="rgba(14,21,34,0.6)" />
+            <stop offset="100%" stopColor="rgba(6,8,14,1)" />
+          </linearGradient>
+        </defs>
+        {/* Mountain range */}
+        <path
+          d="M0 200 L0 140 L60 100 L120 130 L180 70 L240 110 L300 50 L360 90 L420 60 L480 100 L540 40 L600 80 L660 55 L720 95 L780 45 L840 85 L900 65 L960 110 L1020 75 L1080 105 L1140 80 L1200 120 L1200 200 Z"
+          fill="rgba(18,28,42,0.5)"
+        />
+        {/* Castle silhouette */}
+        <g transform="translate(520, 60)" fill="rgba(12,18,30,0.7)">
+          <rect x="0" y="40" width="160" height="80" />
+          <rect x="10" y="20" width="20" height="60" />
+          <rect x="50" y="10" width="20" height="70" />
+          <rect x="90" y="0" width="20" height="80" />
+          <rect x="130" y="20" width="20" height="60" />
+          {/* Battlements */}
+          <rect x="5" y="14" width="6" height="8" />
+          <rect x="19" y="14" width="6" height="8" />
+          <rect x="45" y="4" width="6" height="8" />
+          <rect x="59" y="4" width="6" height="8" />
+          <rect x="85" y="-6" width="6" height="8" />
+          <rect x="99" y="-6" width="6" height="8" />
+          <rect x="125" y="14" width="6" height="8" />
+          <rect x="139" y="14" width="6" height="8" />
+          {/* Windows */}
+          <rect x="65" y="55" width="10" height="14" rx="5" fill="rgba(255,200,69,0.15)" />
+          <rect x="105" y="45" width="10" height="14" rx="5" fill="rgba(255,200,69,0.1)" />
+        </g>
+        {/* Trees (left) */}
+        <g transform="translate(200, 100)" fill="rgba(12,18,30,0.6)">
+          <polygon points="0,40 10,0 20,40" />
+          <polygon points="30,50 42,15 54,50" />
+          <polygon points="55,45 65,10 75,45" />
+        </g>
+        {/* Trees (right) */}
+        <g transform="translate(850, 95)" fill="rgba(12,18,30,0.6)">
+          <polygon points="0,40 10,0 20,40" />
+          <polygon points="25,45 35,10 45,45" />
+          <polygon points="50,50 62,15 74,50" />
+        </g>
+        {/* Gradient overlay for smooth fade */}
+        <rect x="0" y="0" width="1200" height="200" fill="url(#banner-grad)" />
+      </svg>
+
+      {/* Main content */}
       <div className="title-screen__content">
-        <h1 className="title-screen__title">Pax Historia</h1>
-        <p className="title-screen__subtitle">A Grand Strategy Game</p>
+        <div className="title-screen__logo-wrap">
+          <Logo width={320} showTitle={true} />
+        </div>
+
+        <p className="title-screen__tagline">Forge Your Legacy in a World of Conflict</p>
+
+        <div className="title-screen__description">
+          <h3>About Realms of Iron</h3>
+          <p>
+            Realms of Iron is a grand strategy game where you lead a nation to glory through 
+            careful diplomacy, economic management, and military conquest. Set in a fractured 
+            continent where ancient empires have fallen, you must navigate the complex web of 
+            alliances, betrayals, and warfare to emerge victorious.
+          </p>
+          
+          <h3>How to Play</h3>
+          <ul className="title-screen__features">
+            <li>🎯 Choose your nation from 10 unique factions, each with special abilities</li>
+            <li>🏛️ Manage your provinces - develop infrastructure, set economic focus, and build fortifications</li>
+            <li>⚔️ Engage in diplomacy - form alliances, negotiate trade deals, and declare wars</li>
+            <li>🗡️ Command your armies - move troops, besiege enemy strongholds, and win battles</li>
+            <li>📊 Monitor your resources - balance gold, food, production, manpower, and influence</li>
+            <li>🎲 Experience dynamic events - from natural disasters to royal successions</li>
+          </ul>
+        </div>
 
         <div className="title-screen__actions">
           <button className="title-screen__btn title-screen__btn--primary" onClick={onStartNew}>
@@ -224,7 +333,13 @@ function TitleScreen({ onStartNew, onContinue, hasSavedGame }: TitleScreenProps)
               Continue Saved Game
             </button>
           )}
+          
+          <button className="title-screen__btn title-screen__btn--secondary" onClick={() => alert('Coming soon: Detailed tutorial and gameplay guide!')}>
+            How to Play
+          </button>
         </div>
+
+        <p className="title-screen__version">v1.0</p>
       </div>
     </div>
   );
@@ -246,6 +361,8 @@ export default function App() {
     eventLibrary: GameEvent[];
   } | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [mapBust, setMapBust] = useState(0);
+  const [mapImageOverride, setMapImageOverride] = useState<string | null>(null);
 
   const handleStartNew = useCallback(() => {
     try {
@@ -278,6 +395,25 @@ export default function App() {
     setPendingGame(null);
     setMode('title');
   }, []);
+
+  const handleRegenerateMap = useCallback(async (islandCount: number) => {
+    if (!pendingGame) return;
+    const res = await fetch(`/api/regenerate-map?islands=${islandCount}`);
+    const data = await res.json();
+    if (!data.ok) throw new Error(data.error || 'Failed to regenerate map');
+
+    if (data.image) setMapImageOverride(data.image);
+
+    const baseScenario = validateScenario(shatteredKingdomsJson);
+    const updatedScenario = {
+      ...baseScenario,
+      world: { ...baseScenario.world, provinces: data.provinces },
+    };
+    const gameState = initializeGameState(updatedScenario);
+    const eventLib = loadEventLibrary(updatedScenario.genericEvents, updatedScenario.scriptedEvents);
+    setPendingGame({ state: gameState, eventLibrary: eventLib });
+    setMapBust(Date.now());
+  }, [pendingGame]);
 
   const handleContinue = useCallback(() => {
     try {
@@ -319,6 +455,9 @@ export default function App() {
         gameState={pendingGame.state}
         onConfirm={handleNationConfirm}
         onBack={handleNationBack}
+        onRegenerateMap={handleRegenerateMap}
+        mapBust={mapBust}
+        mapImage={mapImageOverride}
       />
     );
   }

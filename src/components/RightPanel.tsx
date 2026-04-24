@@ -11,6 +11,7 @@ import type {
 } from '../types';
 import { getBuildings, getProvinceOutput } from '../engine/economics';
 import { queuedOrderFeedback } from './dialogText';
+import GameIcon from './GameIcon';
 
 export interface RightPanelProps {
   province: Province;
@@ -111,7 +112,7 @@ export default function RightPanel({
       <div className="rightpanel__header">
         <span className="rightpanel__title">{province.name}</span>
         <button className="rightpanel__close" onClick={handleClose}>
-          &times;
+          <GameIcon name="close" size={16} />
         </button>
       </div>
 
@@ -190,7 +191,7 @@ export default function RightPanel({
 
         {isPlayerOwned && province.unrest >= 50 && (
           <div className="rightpanel__unrest-warning">
-            ⚠ High unrest — risk of rebellion
+            <GameIcon name="warning" size={12} /> High unrest — risk of rebellion
           </div>
         )}
 
@@ -279,7 +280,7 @@ export default function RightPanel({
                       style={{ background: armyNation?.color ?? '#666' }}
                     />
                     <span className="rightpanel__army-type">
-                      {army.type === 'Land' ? '\u2694' : '\u2693'} {army.type}
+                      <GameIcon name={army.type === 'Land' ? 'land-army' : 'naval-fleet'} size={12} /> {army.type}
                     </span>
                     <span className="rightpanel__army-strength">
                       Str: {army.strength}
